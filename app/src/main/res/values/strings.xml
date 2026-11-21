@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Sports</string>
+    <string name="title_home">Home</string>
+    <string name="title_account">Account</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_my_sports">My Sports</string>
+    <string name="title_basketball">Basketball</string>
+    <string name="title_football">Football</string>
+    <string name="title_volleyball">Volleyball</string>
+    <string name="title_badminton">Badminton</string>
+    <string name="title_tennis">Tennis</string>
+</resources>

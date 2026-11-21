@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mysports.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.mysports.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mysports.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/mySportsFragment"
+        android:name="com.example.mysports.MySportsFragment"
+        android:label="@string/title_my_sports"
+        tools:layout="@layout/fragment_my_sports">
+        <action
+            android:id="@+id/action_mySportsFragment_to_basketballFragment"
+            app:destination="@id/basketballFragment" />
+        <action
+            android:id="@+id/action_mySportsFragment_to_footballFragment"
+            app:destination="@id/footballFragment" />
+        <action
+            android:id="@+id/action_mySportsFragment_to_volleyballFragment"
+            app:destination="@id/volleyballFragment" />
+        <action
+            android:id="@+id/action_mySportsFragment_to_badmintonFragment"
+            app:destination="@id/badmintonFragment" />
+        <action
+            android:id="@+id/action_mySportsFragment_to_tennisFragment"
+            app:destination="@id/tennisFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/basketballFragment"
+        android:name="com.example.mysports.BasketballFragment"
+        android:label="@string/title_basketball"
+        tools:layout="@layout/fragment_basketball" />
+
+    <fragment
+        android:id="@+id/footballFragment"
+        android:name="com.example.mysports.FootballFragment"
+        android:label="@string/title_football"
+        tools:layout="@layout/fragment_football" />
+
+    <fragment
+        android:id="@+id/volleyballFragment"
+        android:name="com.example.mysports.VolleyballFragment"
+        android:label="@string/title_volleyball"
+        tools:layout="@layout/fragment_volleyball" />
+
+    <fragment
+        android:id="@+id/badmintonFragment"
+        android:name="com.example.mysports.BadmintonFragment"
+        android:label="@string/title_badminton"
+        tools:layout="@layout/fragment_badminton" />
+
+    <fragment
+        android:id="@+id/tennisFragment"
+        android:name="com.example.mysports.TennisFragment"
+        android:label="@string/title_tennis"
+        tools:layout="@layout/fragment_tennis" />
+
+</navigation>
